@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Fake Email Confirmation</title></head>
+<body>
+  <h2>Email Confirmation Page</h2>
+  <p>Email: <span id="email"></span></p>
+  <script>
+    const email = new URLSearchParams(window.location.search).get("email");
+    document.getElementById("email").innerHTML = email;
+  </script>
+</body>
+</html>
